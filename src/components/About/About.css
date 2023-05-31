@@ -3,16 +3,17 @@
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 55vh;
     width: 50vw;
     align-items: center;
     float: right;
     border: 10px groove;
     background-color: whitesmoke;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 45px;
     margin-right: 45px;
+    overflow:scroll;
 }
 .carousel {
     height: '160px';
