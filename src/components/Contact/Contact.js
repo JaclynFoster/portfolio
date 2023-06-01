@@ -18,10 +18,14 @@ const Contact = () => {
     <Layout>
       <Card className="card" title="I'd love to hear from you!">
         <p>My contact info is below:</p>
-        <img className="contacts" src={git} />
+        <a href="https://github.com/JaclynFoster" target="_blank">
+          <img className="contacts" src={git} />
+        </a>
         <label>Github</label>
-        <img className="contacts" src={linkin} />
-        <label className="linked">Linked In</label>
+        <a href="https://www.linkedin.com/in/jaclynfoster89" target="_blank">
+          <img className="contacts" src={linkin} />
+        </a>
+        <label className="linked">LinkedIn</label>
         <Divider />
         <h4>Email me directly:</h4>
         <span>Jaclynfoster89@gmail.com</span>
