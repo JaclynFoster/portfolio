@@ -1,19 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
 import git from '../Contact/github.png'
 import linkin from '../Contact/linkedin.png'
 import { Button, Form, Input, Card, Divider } from 'antd'
 import '../Layout/Layout.css'
 import '../Contact/Contact.css'
+import axios from 'axios'
+
 const { TextArea } = Input
 
 const Contact = () => {
+  const [inputName, setInputName] = useState('')
+  const [inputEmail, setInputEmail] = useState('')
+  const [inputMessage, setInputMessage] = useState('')
+  const [sendStatus, setSendStatus] = useState(true)
   const onFinish = values => {
     console.log('Success:', values)
   }
   const onFinishFailed = errorInfo => {
     console.log('Failed:', errorInfo)
   }
+
+  const sendMessage = e => {
+    e.preventDefault()
+    axios
+      .post(`/api/sendEmail`, {
+        name: inputName,
+        email: inputEmail,
+        message: inputMessage
+      })
+      .then(response => {
+        console.log(response.data)
+      })
+    console.log('sent')
+    setSendStatus(true)
+    setInputName('')
+    setInputEmail('')
+    setInputMessage('')
+  }
+
   return (
     <Layout>
       <Card className="card" title="I'd love to hear from you!">
@@ -50,7 +75,10 @@ const Contact = () => {
               }
             ]}
           >
-            <Input />
+            <Input
+              value={inputName}
+              onChange={e => setInputName(e.target.value)}
+            />
           </Form.Item>
           <Form.Item
             label="Email"
@@ -62,13 +90,24 @@ const Contact = () => {
               }
             ]}
           >
-            <Input />
+            <Input
+              value={inputEmail}
+              onChange={e => setInputEmail(e.target.value)}
+            />
           </Form.Item>
           <Form.Item>
-            <TextArea rows={4} />
+            <TextArea
+              value={inputMessage}
+              onChange={e => setInputMessage(e.target.value)}
+              rows={4}
+            />
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit">
+            <Button
+              onClick={e => sendMessage(e)}
+              type="primary"
+              htmlType="submit"
+            >
               Submit
             </Button>
           </Form.Item>
@@ -79,3 +118,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+
