@@ -14,6 +14,7 @@
     margin-top: 45px;
     margin-right: 45px;
     overflow:scroll;
+    z-index: 95;
 }
 .carousel {
     height: '160px';
@@ -23,11 +24,13 @@
     background: '#364d79';
    margin-top: 50%;
    margin-left: 15%;
+   z-index: 90;
   
 }
 .carousel-img {
     height: 450px;
     width: 530px;
     border: 10px groove;
+    z-index: 91;
 
 }

@@ -1,69 +1,6 @@
-body {
-  margin: 0;
+* {
+top: 0;
 }
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  animation: pulse 20s ease infinite;
-  overflow: hidden;
-}
-
-@keyframes pulse {
-  0% {background: #9ddcdc;}
-  50% {background: #a0e9e9;}
-  100% {background: #a4f4f4;}
-}
-.elements {
-  height: 100vh;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.square {
-  border: 10px dashed #9ddcdc;
-}
-
-.sq2{
-  animation: move1 180s infinite;
-  animation-timing-function: linear;
-  width: 1110px;
-  height: 1110px;
-}
-
-@keyframes move1 {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0.5;
-  }
-  
-  50% {
-    width: 1000px;
-    height: 1000px;
-  }
-  
-  100% {
-     transform: rotate(1000deg);
-    opacity: 1;
-  }
-  }
-
-.sq3 {
-  width: 600px;
-  height: 600px;
-  animation: move1 120s infinite;
-  animation-timing-function: linear;
-}
-
-.sq1 {
-  width: 500px;
-  height: 500px;
-  animation: move1 100s infinite;
-  animation-timing-function: linear;
-}
-
 .nav {
   position: fixed;
   width: 20vw;
@@ -91,3 +28,10 @@ body {
   background-color: rgb(121, 213, 219);
   color: darkgray;
 }
+
+  .ball {
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0.2;
+    overflow: hidden;
+  }
