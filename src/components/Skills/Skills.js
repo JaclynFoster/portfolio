@@ -8,9 +8,11 @@ import jsLogo from '../Skills/logos/javascript-logo.png'
 import nodeLogo from '../Skills/logos/node-logo.png'
 import pgLogo from '../Skills/logos/postgres-logo.png'
 import reactLogo from '../Skills/logos/react-logo.png'
-import bitLogo from '../Skills/logos/bitio-logo.png'
+import bootstrap from '../Skills/logos/bootstrap.png'
+import firebase from '../Skills/logos/firebase.png'
 import routerLogo from '../Skills/logos/router-logo.png'
 import sequelizeLogo from '../Skills/logos/sequelize-logo.png'
+import reduxLogo from '../Skills/logos/redux.png'
 import '../Skills/Skills.css'
 
 const Skills = () => {
@@ -25,26 +27,30 @@ const Skills = () => {
           <label>CSS</label>
           <img className="logo" src={cssLogo} />
           <label>Javascript</label>
-          <img className="logo" src={jsLogo} />
-          <label>React</label>
-          <img className="logo" src={reactLogo} />
+          <img className="logo js" src={jsLogo} />
+          <label className="react-label">React</label>
+          <img className="logo react" src={reactLogo} />
           <label>React Router</label>
-          <img className="logo router" src={routerLogo} />
+          <img className="logo" src={routerLogo} />
+          <label>Redux</label>
+          <img className="logo redux" src={reduxLogo} />
+          <label>Bootstrap</label>
+          <img className="logo bs" src={bootstrap} />
         </div>
         <h3>Back-End:</h3>
-        <div className="logo-container">
+        <div className="logo-container back">
           <label>Axios</label>
-          <img className="logo" src={axiosLogo} />
+          <img className="logo axios" src={axiosLogo} />
           <label>Express</label>
-          <img className="logo" src={expressLogo} />
+          <img className="logo express" src={expressLogo} />
           <label>Node</label>
           <img className="logo" src={nodeLogo} />
-          <label>Sequelize</label>
+          <label className="sql">Sequelize</label>
           <img className="logo" src={sequelizeLogo} />
           <label>PostgreSQL</label>
           <img className="logo" src={pgLogo} />
-          <label>Bit.io</label>
-          <img className="logo" src={bitLogo} />
+          <label>Firebase</label>
+          <img className="logo" src={firebase} />
         </div>
       </div>
       <div className="bonus-container">
@@ -61,3 +67,4 @@ const Skills = () => {
 }
 
 export default Skills
+

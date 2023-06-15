@@ -8,7 +8,15 @@ const Projects = () => {
   return (
     <Layout>
       <Card className="crochet-card" title="Crochet Pattern App">
-        <img className="project-img" src={crochet} />
+        <iframe
+          width="360"
+          height="215"
+          src="https://www.youtube.com/embed/4y6BUayiu8Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
         <Divider />
         <p>
           This app allows you to see pictures of crochet projects, view their
@@ -60,3 +68,4 @@ const Projects = () => {
 }
 
 export default Projects
+

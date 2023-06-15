@@ -34,3 +34,18 @@
     z-index: 91;
 
 }
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 10%;
+    align-items: center;
+    margin-top: -10%;
+  
+}
+
+.resume-link {
+    font-size: 40px;
+    margin: 5px;
+}

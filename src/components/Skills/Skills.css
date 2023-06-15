@@ -2,6 +2,7 @@
 .logo {
     height: 100px;
     width: 150px;
+    padding: 10px;
 }
 .logo-container {
     display: flex;
@@ -9,16 +10,18 @@
     flex-wrap: wrap;
     background-color: whitesmoke;
     border: 10px groove;
-    width: 57vw;
+    width: 49vw;
     height: 40vh;
     align-items: center;
     justify-content: space-evenly;
     z-index: 85; 
+   
 }
 
 label {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
+    padding: 5px;
 }
 
 .skill-container {
@@ -35,9 +38,6 @@ h3 {
     font-size: 25px;
 }
 
-.router {
-    margin-left: -30%;
-}
 
 .bonus-container {
     background: whitesmoke;
@@ -52,4 +52,21 @@ h3 {
   font-size: 20px;
   margin-top: 25%;
   margin-left: 10%;
+}
+.axios {
+    width: 200px;
+   height: 90px;
+}
+
+.express {
+    width: 240px;
+}
+
+
+.back {
+    width: 57vw;
+}
+
+.bs {
+    margin-left: -25%;
 }

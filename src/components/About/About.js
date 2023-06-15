@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Layout/Layout.js'
 import '../About/About.css'
 import 'antd/dist/reset.css'
+import {PaperClipOutlined} from '@ant-design/icons'
 import { Carousel } from 'antd'
 import chickens from './chickens.jpeg'
 import family from './family.jpeg'
@@ -45,6 +46,10 @@ const About = () => {
           <img className="carousel-img" src={chickens} />
         </div>
       </Carousel>
+      <div className="resume">
+     <h1>View my resume: </h1>
+      <a className="resume-link" href="https://docs.google.com/document/d/1VPwRBdIqeGzBuIFORXKY0RAySnfG7Q2f4gfhVMUQE2o/edit?usp=sharing" target="_blank"><PaperClipOutlined /></a>
+      </div>
     </Layout>
   )
 }
