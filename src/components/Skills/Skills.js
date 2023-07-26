@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../Layout/Layout.js'
+import UseModal from './UseModal.js'
 import axiosLogo from '../Skills/logos/axios-logo.png'
 import cssLogo from '../Skills/logos/css-logo.png'
 import expressLogo from '../Skills/logos/express-logo.png'
@@ -13,58 +14,109 @@ import firebase from '../Skills/logos/firebase.png'
 import routerLogo from '../Skills/logos/router-logo.png'
 import sequelizeLogo from '../Skills/logos/sequelize-logo.png'
 import reduxLogo from '../Skills/logos/redux.png'
+import awsLogo from './logos/aws.png'
+import jwtLogo from './logos/jwt.png'
+import bcryptLogo from './logos/bcrypt.png'
 import '../Skills/Skills.css'
 
 const Skills = () => {
+  const [useModal, setUseModal] = useState(false)
+  const showModal = () => {
+    setUseModal(true)
+  }
+
   return (
     <Layout>
+      <h1 className="skill-title">My Skillset includes the following:</h1>
       <div className="skill-container">
-        <h3>My Skillset includes the following:</h3>
-        <h3>Front-End:</h3>
-        <div className="logo-container">
-          <label>HTML</label>
-          <img className="logo" src={htmlLogo} />
-          <label>CSS</label>
-          <img className="logo" src={cssLogo} />
-          <label>Javascript</label>
-          <img className="logo js" src={jsLogo} />
-          <label className="react-label">React</label>
-          <img className="logo react" src={reactLogo} />
-          <label>React Router</label>
-          <img className="logo" src={routerLogo} />
-          <label>Redux</label>
-          <img className="logo redux" src={reduxLogo} />
-          <label>Bootstrap</label>
-          <img className="logo bs" src={bootstrap} />
+        <div>
+          <h3>Front-End:</h3>
+          <div className="logo-container">
+            <div className="logo-flex">
+              <label>HTML</label>
+              <img className="logo" src={htmlLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>CSS</label>
+              <img className="logo" src={cssLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Javascript</label>
+              <img className="logo" src={jsLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>React</label>
+              <img className="logo" src={reactLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>React Router</label>
+              <img className="logo" src={routerLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Redux</label>
+              <img className="logo" src={reduxLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Bootstrap</label>
+              <img className="logo" src={bootstrap} />
+            </div>
+            <div className="logo-flex">
+              <div className="logo-flex">
+                <label>Axios</label>
+                <img className="logo axios" src={axiosLogo} />
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Back-End:</h3>
-        <div className="logo-container back">
-          <label>Axios</label>
-          <img className="logo axios" src={axiosLogo} />
-          <label>Express</label>
-          <img className="logo express" src={expressLogo} />
-          <label>Node</label>
-          <img className="logo" src={nodeLogo} />
-          <label className="sql">Sequelize</label>
-          <img className="logo" src={sequelizeLogo} />
-          <label>PostgreSQL</label>
-          <img className="logo" src={pgLogo} />
-          <label>Firebase</label>
-          <img className="logo" src={firebase} />
+        <div>
+          <h3>Back-End:</h3>
+          <div className="logo-container">
+            <div className="logo-flex">
+              <label>Express</label>
+              <img className="logo express" src={expressLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Node</label>
+              <img className="logo" src={nodeLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Sequelize</label>
+              <img className="logo" src={sequelizeLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>PostgreSQL</label>
+              <img className="logo" src={pgLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Firebase</label>
+              <img className="logo" src={firebase} />
+            </div>
+            <div className="logo-flex">
+              <label>AWS</label>
+              <img className="logo" src={awsLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>JSON Web Token</label>
+              <img className="logo" src={jwtLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Bcrypt</label>
+              <img className="logo" src={bcryptLogo} />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="bonus-container">
-        <h4>Bonus Knowledge:</h4>
-        <ul>
-          <li>10+ years experience in the medical field</li>
-          <li>7+ years experience in management</li>
-          <li>Licensed Texas Workers Compensation Adjuster</li>
-          <li>Certified Professional Medical Biller</li>
-        </ul>
+
+      {useModal ? <UseModal setUseModal={setUseModal} /> : null}
+      <div className="know-btn-container">
+        <button className="know-btn" onClick={() => showModal()}>
+          Bonus Knowledge
+        </button>
       </div>
     </Layout>
   )
 }
 
 export default Skills
+
 

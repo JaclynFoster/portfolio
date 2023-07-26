@@ -5,17 +5,13 @@
     padding: 10px;
 }
 .logo-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    border: 10px groove;
-    width: 49vw;
-    height: 40vh;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 85; 
-   
+    width: 100%;
+    min-width: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   border: 10px groove;
+   padding: 1rem;
 }
 
 label {
@@ -26,12 +22,13 @@ label {
 
 .skill-container {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    float: right;
-    z-index: 80;
-    margin-left: 40%;
-    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+
+
+
 }
 
 h3 {
@@ -39,34 +36,46 @@ h3 {
 }
 
 
-.bonus-container {
-    background: whitesmoke;
-    width: 350px;
-    height: 350px;
-    border: 10px double darkgray;
-    border-radius: 50%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-  font-size: 20px;
-  margin-top: 25%;
-  margin-left: 10%;
-}
+
 .axios {
-    width: 200px;
-   height: 90px;
+    width: 180px;
+
 }
 
 .express {
-    width: 240px;
+    width: 180px;
 }
 
 
-.back {
-    width: 57vw;
+.logo-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.bs {
-    margin-left: -25%;
+.skill-title {
+    text-align: center;
+}
+
+.know-btn {
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color:black;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.know-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.know-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
