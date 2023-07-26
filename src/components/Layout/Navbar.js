@@ -8,15 +8,15 @@ const NavBar = () => {
       <Link className="link" to="/">
         About
       </Link>
-      <Divider />
+      <Divider type="vertical"/>
       <Link className="link" to="/skills">
         Skills
       </Link>
-      <Divider />
+      <Divider type="vertical"/>
       <Link className="link" to="/projects">
         Projects
       </Link>
-      <Divider />
+    <Divider type="vertical"/>
       <Link className="link" to="/contact">
         Contact
       </Link>

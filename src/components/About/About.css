@@ -2,50 +2,73 @@
     color: black;
     font-size: 24px;
     display: flex;
-    flex-direction: column;
-    height: 55vh;
-    width: 50vw;
+    flex-direction: column; 
+     height: 55vh;
+    width: 50%;
     align-items: center;
-    float: right;
     border: 10px groove;
     background-color: whitesmoke;
     text-align: center;
     padding: 15px;
-    margin-top: 45px;
-    margin-right: 45px;
     overflow:scroll;
-    z-index: 95;
-}
-.carousel {
-    height: '160px';
-    color: '#fff';
-    line-height: '160px';
-    text-align: 'center';
-    background: '#364d79';
-   margin-top: 50%;
-   margin-left: 15%;
-   z-index: 90;
-  
-}
-.carousel-img {
-    height: 450px;
-    width: 530px;
-    border: 10px groove;
-    z-index: 91;
 
 }
 
-.resume {
+
+.about-container {
     display: flex;
-    flex-direction: row;
-    float: right;
-    margin-right: 10%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 390px;
+    justify-content: space-evenly;
+    align-content: center;
     align-items: center;
-    margin-top: -10%;
-  
+   
 }
 
-.resume-link {
+   .carousel-container {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border: 10px groove;
+    text-align: center;
+    margin: 15px;
+    background-color: white;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    width: 40%; 
+    /* height: 600px; */
+    min-width: 350px !important;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* align-items: center; */
+   }
+
+   .carousel-title {
     font-size: 40px;
-    margin: 5px;
+    text-align: center;
+   }
+
+   .carousel-img {
+    width: 100%;
+    min-width: 50px;
+
+    min-height: 500px; 
+    border: 5px groove;
+   }
+
+   .carousel-label {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

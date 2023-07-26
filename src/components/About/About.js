@@ -1,18 +1,26 @@
 import React from 'react'
 import Layout from '../Layout/Layout.js'
-import '../About/About.css'
+import './About.css'
 import 'antd/dist/reset.css'
 import {PaperClipOutlined} from '@ant-design/icons'
-import { Carousel } from 'antd'
+import { Card, Carousel } from 'antd'
 import chickens from './chickens.jpeg'
 import family from './family.jpeg'
 import giraffe from './giraffe.jpeg'
 import me from './me.jpeg'
 
 const About = () => {
-  const carousel = {}
+  const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center'
+  }
   return (
     <Layout>
+
+      <div className="about-container">
+
       <div className="about">
         <p>
           Hi, my name is Jaclyn Foster. I am currently a student at DevMountain
@@ -32,24 +40,35 @@ const About = () => {
           path to becoming who I am today.
         </p>
       </div>
+
+         <div className="carousel-container">
+
+      <h1 className="carousel-title">A Little About Me:</h1>
       <Carousel autoplay>
         <div className="carousel">
-          <img className="carousel-img" src={me} />
+          <img className="carousel-img" style={contentStyle} src={me} />
+          <label className="carousel-label">Nice to meet you</label>
         </div>
         <div className="carousel">
-          <img className="carousel-img" src={family} />
+          <img className="carousel-img" style={contentStyle} src={family} />
+          <label className="carousel-label">
+            This is my amazing family
+          </label>
         </div>
         <div className="carousel">
-          <img className="carousel-img" src={giraffe} />
+          <img className="carousel-img" style={contentStyle} src={giraffe} />
+          <label className="carousel-label">I love to crochet in my spare time</label>
         </div>
         <div className="carousel">
-          <img className="carousel-img" src={chickens} />
+          <img className="carousel-img" style={contentStyle} src={chickens} />
+          <label className="carousel-label">I also enjoy raising animals</label>
         </div>
       </Carousel>
-      <div className="resume">
-     <h1>View my resume: </h1>
-      <a className="resume-link" href="https://docs.google.com/document/d/1VPwRBdIqeGzBuIFORXKY0RAySnfG7Q2f4gfhVMUQE2o/edit?usp=sharing" target="_blank"><PaperClipOutlined /></a>
+         </div>
+   
       </div>
+   
+      
     </Layout>
   )
 }
