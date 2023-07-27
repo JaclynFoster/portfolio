@@ -27,9 +27,11 @@ const Skills = () => {
 
   return (
     <Layout>
+      <div className="skill-main">
+
       <h1 className="skill-title">My Skillset includes the following:</h1>
       <div className="skill-container">
-        <div>
+        <div className="front-end">
           <h3>Front-End:</h3>
           <div className="logo-container">
             <div className="logo-flex">
@@ -44,6 +46,9 @@ const Skills = () => {
               <label>Javascript</label>
               <img className="logo" src={jsLogo} />
             </div>
+          </div>
+          <div className="logo-container">
+
             <div className="logo-flex">
               <label>React</label>
               <img className="logo" src={reactLogo} />
@@ -56,6 +61,9 @@ const Skills = () => {
               <label>Redux</label>
               <img className="logo" src={reduxLogo} />
             </div>
+          </div>
+          <div className="logo-container end">
+
             <div className="logo-flex">
               <label>Bootstrap</label>
               <img className="logo" src={bootstrap} />
@@ -65,10 +73,10 @@ const Skills = () => {
                 <label>Axios</label>
                 <img className="logo axios" src={axiosLogo} />
               </div>
-            </div>
           </div>
+            </div>
         </div>
-        <div>
+        <div className="back-end">
           <h3>Back-End:</h3>
           <div className="logo-container">
             <div className="logo-flex">
@@ -83,6 +91,9 @@ const Skills = () => {
               <label>Sequelize</label>
               <img className="logo" src={sequelizeLogo} />
             </div>
+          </div>
+          <div className="logo-container">
+
             <div className="logo-flex">
               <label>PostgreSQL</label>
               <img className="logo" src={pgLogo} />
@@ -95,6 +106,9 @@ const Skills = () => {
               <label>AWS</label>
               <img className="logo" src={awsLogo} />
             </div>
+          </div>
+          <div className="logo-container end">
+
             <div className="logo-flex">
               <label>JSON Web Token</label>
               <img className="logo" src={jwtLogo} />
@@ -108,10 +122,11 @@ const Skills = () => {
       </div>
 
       {useModal ? <UseModal setUseModal={setUseModal} /> : null}
-      <div className="know-btn-container">
+    
         <button className="know-btn" onClick={() => showModal()}>
           Bonus Knowledge
         </button>
+     
       </div>
     </Layout>
   )

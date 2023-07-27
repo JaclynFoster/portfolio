@@ -1,5 +1,5 @@
 import React from 'react'
-import {PaperClipOutlined, MailOutlined, PhoneOutlined} from '@ant-design/icons'
+import {PaperClipOutlined, MailOutlined} from '@ant-design/icons'
 import { Divider } from 'antd'
 
 
@@ -19,12 +19,8 @@ const Footer = () => {
             <MailOutlined className="footer-icon"/>
             <h4>Jaclyndfoster89@gmail.com</h4>
             </div>
-            <Divider type="vertical"/>
-            <div className="footer-div">
-
-            <PhoneOutlined className="footer-icon"/>
-            <h4>(469) 734-2518</h4>
-            </div>
+        
+          
          </div>
         </div>
 
