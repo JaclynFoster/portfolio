@@ -25,9 +25,9 @@ const Projects = () => {
           application.
         </p>
         <label>Front End:</label>
-        <p>Javascript, HTML, CSS</p>
+        <p>Javascript, HTML, CSS, Axios</p>
         <label>Back End:</label>
-        <p>Node, Express, Axios, Cors</p>
+        <p>Node, Express, Cors</p>
         <a href="https://github.com/JaclynFoster/full-crud-app" target="_blank">
           Github Link
         </a>
@@ -50,9 +50,9 @@ const Projects = () => {
           user's posts and delete their own posts.
         </p>
         <label>Front End:</label>
-        <p>Javascript, HTML, CSS, React, React Router, Context API</p>
+        <p>Javascript, HTML, CSS, React, React Router, Context API, Axios</p>
         <label>Back End:</label>
-        <p>Node, Express, Axios, Cors, Sequelize</p>
+        <p>Node, Express, Cors, Sequelize</p>
         <a
           href="https://github.com/JaclynFoster/neighborhood-chat-page"
           target="_blank"
@@ -60,6 +60,26 @@ const Projects = () => {
           Github Link
         </a>
         <a className="site" href="http://54.177.82.121:3400/" target="_blank">
+          Site Link
+        </a>
+      </Card>
+      <Card className="neighbor-card" title="E-Commerce Site">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0IOMiHQT6Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <Divider />
+        <p>
+          This is a full-stack E-Commerce site allowing users to browse animals online, add to cart and checkout. The user can signin or create an account and can only view certain pages when logged in. Hosted through serverless S3 via AWS and database is through PostgreSQL Cockroach DB.
+        </p>
+        <label>Front End:</label>
+        <p>Javascript, HTML, CSS, React, React Router, Redux, Context API, Axios, Bootstrap</p>
+        <label>Back End:</label>
+        <p>Node, Express, Cors, PostgreSQL, Bcrypt, JWT</p>
+        <a
+          href="https://github.com/JaclynFoster/store-app"
+          target="_blank"
+        >
+          Github Link
+        </a>
+        <a className="site" href="fawsturfarms.jaclyndfoster.com" target="_blank">
           Site Link
         </a>
       </Card>
