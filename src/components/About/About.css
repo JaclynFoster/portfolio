@@ -1,12 +1,15 @@
 .about {
-    color: black;
+    color: whitesmoke;
     font-size: 24px;
     display: flex;
     flex-direction: column; 
     width: 50%;
+    min-width: 390px;
     align-items: center;
-    border: 10px groove;
-    background-color: whitesmoke;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 1px groove;
+    border-radius: 14px;
+    background-color: inherit;
     text-align: center;
     padding: 15px;
     overflow:scroll;
@@ -28,41 +31,42 @@
 
    .carousel-container {
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    border: 10px groove;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 1px groove;
     text-align: center;
+    border-radius: 14px;
     margin: 15px;
-    background-color: white;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
+    background-color: inherit;
+    margin-top: 25px;
+    margin-bottom: 25px;
     width: 40%; 
-    /* height: 600px; */
-    min-width: 350px !important;
-    background-color: whitesmoke;
+    min-width: 390px !important;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    /* align-items: center; */
    }
 
    .carousel-title {
     font-size: 40px;
     text-align: center;
+    color: whitesmoke;
    }
 
    .carousel-img {
     width: 100%;
     min-width: 50px;
-
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 1px groove;
+    border-radius: 14px;
     min-height: 500px; 
-    border: 5px groove;
+    
    }
 
    .carousel-label {
     font-size: 25px;
-    font-weight: bold;
-    color: black;
+    color: whitesmoke;
+    margin-top: 2px;
 }
 
 .carousel {
@@ -71,3 +75,4 @@
     justify-content: center;
     align-items: center;
 }
+

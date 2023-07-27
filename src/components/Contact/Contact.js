@@ -43,7 +43,11 @@ const Contact = () => {
   return (
     <Layout>
       <div className="contact-container">
-        <Card className="card" title="I'd love to hear from you!">
+        <Card
+          className="card"
+          title="I'd love to hear from you!"
+          headStyle={{ color: 'whitesmoke' }}
+        >
           <p>My contact info is below:</p>
           <a href="https://github.com/JaclynFoster" target="_blank">
             <img className="contacts" src={git} />
@@ -56,74 +60,16 @@ const Contact = () => {
           <Divider />
           <div className="resume-container">
             <h4>Email Me:</h4>
-            <MailOutlined />
+            <MailOutlined style={{ color: 'blue' }} />
             <span> Jaclynfoster89@gmail.com</span>
             <a
               href="https://docs.google.com/document/d/1VPwRBdIqeGzBuIFORXKY0RAySnfG7Q2f4gfhVMUQE2o/edit?usp=sharing"
               target="_blank"
             >
-              <PaperClipOutlined />
+              <PaperClipOutlined style={{ color: 'blue' }} />
             </a>
             <span>View Resume</span>
           </div>
-          {/*
-        <Form
-          className="form"
-          name="basic"
-          initialValues={{
-            remember: true
-          }}
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          autoComplete="off"
-          >
-          <Form.Item
-            label="Name"
-            name="Name"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your name!'
-              }
-            ]}
-            >
-            <Input
-              value={inputName}
-              onChange={e => setInputName(e.target.value)}
-              />
-          </Form.Item>
-          <Form.Item
-            label="Email"
-            name="Email"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your email!'
-              }
-            ]}
-            >
-            <Input
-              value={inputEmail}
-              onChange={e => setInputEmail(e.target.value)}
-              />
-          </Form.Item>
-          <Form.Item>
-            <TextArea
-              value={inputMessage}
-              onChange={e => setInputMessage(e.target.value)}
-              rows={4}
-              />
-          </Form.Item>
-          <Form.Item>
-            <Button
-              onClick={e => sendMessage(e)}
-              type="primary"
-              htmlType="submit"
-              >
-              Submit
-            </Button>
-          </Form.Item>
-        </Form> */}
         </Card>
       </div>
     </Layout>
@@ -131,6 +77,7 @@ const Contact = () => {
 }
 
 export default Contact
+
 
 
 

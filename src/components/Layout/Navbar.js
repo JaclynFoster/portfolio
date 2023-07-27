@@ -8,15 +8,15 @@ const NavBar = () => {
       <Link className="link" to="/">
         About
       </Link>
-      <Divider type="vertical"/>
+      <Divider type="vertical" />
       <Link className="link" to="/skills">
         Skills
       </Link>
-      <Divider type="vertical"/>
+      <Divider type="vertical" />
       <Link className="link" to="/projects">
         Projects
       </Link>
-    <Divider type="vertical"/>
+      <Divider type="vertical" />
       <Link className="link" to="/contact">
         Contact
       </Link>
@@ -25,3 +25,4 @@ const NavBar = () => {
 }
 
 export default NavBar
+

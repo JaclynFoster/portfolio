@@ -7,9 +7,14 @@ const Projects = () => {
   return (
     <Layout>
       <div className="card-container">
-        <Card className="store-card" title="Crochet Pattern App">
+        <Card
+          className="store-card"
+          title="Crochet Pattern App"
+          headStyle={{ color: 'whitesmoke' }}
+        >
           <div className="video">
             <iframe
+              width={'100%'}
               src="https://www.youtube.com/embed/4y6BUayiu8Q"
               title="YouTube video player"
               frameborder="0"
@@ -39,9 +44,14 @@ const Projects = () => {
             </a>
           </div>
         </Card>
-        <Card className="store-card" title="Neighborhood Chat Page">
+        <Card
+          className="store-card"
+          title="Neighborhood Chat Page"
+          headStyle={{ color: 'whitesmoke' }}
+        >
           <div className="video">
             <iframe
+              width={'100%'}
               src="https://www.youtube.com/embed/DrIzf3Ld2RE"
               title="YouTube video player"
               frameborder="0"
@@ -81,10 +91,15 @@ const Projects = () => {
             </a>
           </div>
         </Card>
-        <Card className="store-card" title="E-Commerce Site">
+        <Card
+          className="store-card"
+          title="E-Commerce Site"
+          headStyle={{ color: 'whitesmoke' }}
+        >
           <div className="card-flex">
             <div className="video">
               <iframe
+                width={'100%'}
                 src="https://www.youtube.com/embed/0IOMiHQT6Gg"
                 title="YouTube video player"
                 frameborder="0"
@@ -133,6 +148,8 @@ const Projects = () => {
 }
 
 export default Projects
+
+
 
 
 

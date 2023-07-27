@@ -4,40 +4,40 @@
     margin-left: 30px;
 }
 
+
 .card {
+    padding: 1rem;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+    border: 1px groove;
     text-align: center;
-    font-size: 30px;
-    border: 5px groove;
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
+    background-color: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 50%;
-    min-width: 390px;
-}   
+    min-width: 390px !important;
+    color: whitesmoke;
+    font-size: 21px;
+}
 
 .linked {
     margin-left: 10px;
 }
 
-.form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px; 
-    border: 4px groove;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 .contact-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-self: center;
     align-items: center;
+    justify-self: center;
     width: 100%;
-    min-width: 390px;
+    min-width: 390px; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+ 
 } 
 
 .resume-container {
@@ -47,4 +47,8 @@
     align-items: center;
     min-width: 350px;
     width: 100%;
+    background-color: inherit;
+    color: whitesmoke;
+
+   
 }
