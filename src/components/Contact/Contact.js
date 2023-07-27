@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
 import git from '../Contact/github.png'
 import linkin from '../Contact/linkedin.png'
+import { MailOutlined, PaperClipOutlined } from '@ant-design/icons'
 import { Button, Form, Input, Card, Divider } from 'antd'
 import '../Layout/Layout.css'
 import '../Contact/Contact.css'
@@ -41,20 +42,31 @@ const Contact = () => {
 
   return (
     <Layout>
-      <Card className="card" title="I'd love to hear from you!">
-        <p>My contact info is below:</p>
-        <a href="https://github.com/JaclynFoster" target="_blank">
-          <img className="contacts" src={git} />
-        </a>
-        <label>Github</label>
-        <a href="https://www.linkedin.com/in/jaclynfoster89" target="_blank">
-          <img className="contacts" src={linkin} />
-        </a>
-        <label className="linked">LinkedIn</label>
-        <Divider />
-        <h4>Email me directly:</h4>
-        <span>Jaclynfoster89@gmail.com</span>
-
+      <div className="contact-container">
+        <Card className="card" title="I'd love to hear from you!">
+          <p>My contact info is below:</p>
+          <a href="https://github.com/JaclynFoster" target="_blank">
+            <img className="contacts" src={git} />
+          </a>
+          <label>Github</label>
+          <a href="https://www.linkedin.com/in/jaclynfoster89" target="_blank">
+            <img className="contacts" src={linkin} />
+          </a>
+          <label className="linked">LinkedIn</label>
+          <Divider />
+          <div className="resume-container">
+            <h4>Email Me:</h4>
+            <MailOutlined />
+            <span> Jaclynfoster89@gmail.com</span>
+            <a
+              href="https://docs.google.com/document/d/1VPwRBdIqeGzBuIFORXKY0RAySnfG7Q2f4gfhVMUQE2o/edit?usp=sharing"
+              target="_blank"
+            >
+              <PaperClipOutlined />
+            </a>
+            <span>View Resume</span>
+          </div>
+          {/*
         <Form
           className="form"
           name="basic"
@@ -64,7 +76,7 @@ const Contact = () => {
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
           autoComplete="off"
-        >
+          >
           <Form.Item
             label="Name"
             name="Name"
@@ -74,11 +86,11 @@ const Contact = () => {
                 message: 'Please input your name!'
               }
             ]}
-          >
+            >
             <Input
               value={inputName}
               onChange={e => setInputName(e.target.value)}
-            />
+              />
           </Form.Item>
           <Form.Item
             label="Email"
@@ -89,35 +101,37 @@ const Contact = () => {
                 message: 'Please input your email!'
               }
             ]}
-          >
+            >
             <Input
               value={inputEmail}
               onChange={e => setInputEmail(e.target.value)}
-            />
+              />
           </Form.Item>
           <Form.Item>
             <TextArea
               value={inputMessage}
               onChange={e => setInputMessage(e.target.value)}
               rows={4}
-            />
+              />
           </Form.Item>
           <Form.Item>
             <Button
               onClick={e => sendMessage(e)}
               type="primary"
               htmlType="submit"
-            >
+              >
               Submit
             </Button>
           </Form.Item>
-        </Form>
-      </Card>
+        </Form> */}
+        </Card>
+      </div>
     </Layout>
   )
 }
 
 export default Contact
+
 
 
 
