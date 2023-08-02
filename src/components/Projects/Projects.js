@@ -84,7 +84,7 @@ const Projects = () => {
             <Divider type="vertical" />
             <a
               className="site"
-              href="http://54.177.82.121:3400/"
+              href="http://blockbanter.jaclyndfoster.com"
               target="_blank"
             >
               Site Link
@@ -134,7 +134,7 @@ const Projects = () => {
               <Divider type="vertical" />
               <a
                 className="site"
-                href="fawsturfarms.jaclyndfoster.com"
+                href="http://fawsturfarms.jaclyndfoster.com/"
                 target="_blank"
               >
                 Site Link
