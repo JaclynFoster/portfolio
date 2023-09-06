@@ -14,7 +14,7 @@ const UseModal = ({ setUseModal }) => {
   return (
     <Modal show={true}>
       <ModalHeader>
-        <h3>Bonus Knowledge & Programs</h3>
+        <h3 style={{color: "black"}}>Bonus Knowledge & Programs</h3>
       </ModalHeader>
       <ModalBody>
         {' '}

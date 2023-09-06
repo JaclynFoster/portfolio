@@ -11,7 +11,7 @@ process.env.REDIRECT_URIS
 
 oAuth2Client.setCredentials({ refresh_token: tokens.refresh_token })
 
-const sendMail = async (req, res) => {
+async function sendMail (req, res) {
 const { name, email, message } = req.body
 try {
     await createMail()
@@ -22,7 +22,7 @@ try {
     res.send(error)
 }
 
-const createMail = async () => {
+async function createMail () {
     try {
     console.log('Creating Transport')
     let transporter = await nodemailer.createTransport({
@@ -77,5 +77,5 @@ const createMail = async () => {
 }
 }
 
-module.exports = { sendMail }
+module.exports = {sendMail}
 

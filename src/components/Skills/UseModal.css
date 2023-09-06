@@ -9,12 +9,11 @@
     height: 30px;
     background-color: black;
     color: white;
-   display: flex;
-   align-self: center;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 15px;
-  
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
   }
   .ok-btn:hover {
     background-color: beige;
