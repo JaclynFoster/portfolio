@@ -19,7 +19,7 @@ const Footer = () => {
         <Divider type="vertical" />
         <div className="footer-div">
           <MailOutlined className="footer-icon" />
-          <h4>Jaclyndfoster89@gmail.com</h4>
+          <h4>Jaclynfoster89@gmail.com</h4>
         </div>
       </div>
     </div>

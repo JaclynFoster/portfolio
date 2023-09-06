@@ -43,3 +43,18 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.success-icon {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.contact-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}

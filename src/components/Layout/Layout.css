@@ -20,7 +20,6 @@
 }
 
 .link:hover {
-  background-color: rgb(103, 160, 164);
   color: rgb(96, 89, 89);
 }
 
@@ -38,13 +37,12 @@
     height: 100%;
     font-family: Arial, Helvetica;
     letter-spacing: 0.02em;
-     font-weight: 400;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased; 
     min-height: 800px;
     min-width: 393px;
     margin-left: 0;
     margin-right: 0; 
-   
   }
 
   .footer-container {
@@ -55,8 +53,6 @@
     right: 0;
     background-color: rgb(89, 107, 134);
     color: whitesmoke;
-    /* position: absolute; */
-   
   } 
 
   .footer {
@@ -82,7 +78,6 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-   
   } 
 
 

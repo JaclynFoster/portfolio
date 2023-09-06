@@ -3,12 +3,18 @@ import axios from 'axios'
 import './Contact.css'
 import { Card, Button, Form, Input } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
+import ContactModal from './ContactModal'
+import ModalComponent from '../../UI/ModalComponent'
+import { useDispatch, useSelector } from 'react-redux'
+import { modalOptions, showModal } from '../../redux/slices/modalSlice'
 
 const ContactForm = () => {
 const [name, setName] = useState('')
 const [email, setEmail] = useState('')
 const [message, setMessage] = useState('')
 const [mail, setMail] = useState([])
+const dispatch = useDispatch()
+const modal = useSelector(modalOptions)
 const sendMail = () => {
     axios
     .post(`http://localhost:3200/mail/sendMail`, {
@@ -19,6 +25,7 @@ const sendMail = () => {
     .then(res => {
         console.log('Portfolio Email Sent:', ...res.data)
         setMail(...res.data)
+        dispatch(showModal('contact'))
         setName('')
         setEmail('')
         setMessage('')
@@ -41,6 +48,11 @@ return (
             value={message}
             onChange={e => setMessage(e.target.value)}
         />
+        {modal.contact ? (
+    <ModalComponent modalName={'contact'}>
+        <ContactModal />
+    </ModalComponent>
+        ): null}
         </Form.Item>
         <Button type="primary" htmlType="submit">
         Submit

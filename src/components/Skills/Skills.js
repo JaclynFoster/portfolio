@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/Layout.js'
-import UseModal from './UseModal.js'
+import BonusSkills from './BonusSkills.js'
 import axiosLogo from '../Skills/logos/axios-logo.png'
 import cssLogo from '../Skills/logos/css-logo.png'
 import expressLogo from '../Skills/logos/express-logo.png'
@@ -20,19 +20,29 @@ import bcryptLogo from './logos/bcrypt.png'
 import typescript from './logos/typescript.png'
 import nodemailer from './logos/nodemailer.png'
 import '../Skills/Skills.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { modalOptions } from '../../redux/slices/modalSlice.js'
+import { showModal, closeModal } from '../../redux/slices/modalSlice.js'
+import ModalComponent from '../../UI/ModalComponent.js'
 
 const Skills = () => {
-  const [useModal, setUseModal] = useState(false)
-  const showModal = () => {
-    setUseModal(true)
+  const modal = useSelector(modalOptions)
+  const dispatch = useDispatch()
+  
+  const showBonusSkills = () => {
+    dispatch(showModal('skills'))
   }
 
   return (
     <Layout>
       <div className="skill-title">
         <h1>My Skillset includes the following:</h1>
-        {useModal ? <UseModal setUseModal={setUseModal} /> : null}
-        <button className="know-btn" onClick={() => showModal()}>
+        {modal.skills ? (
+          <ModalComponent modalName={'skills'}>
+            <BonusSkills />
+          </ModalComponent>
+        ): null}
+        <button className="know-btn" onClick={() => showBonusSkills()}>
           Bonus Knowledge
         </button>
       </div>
