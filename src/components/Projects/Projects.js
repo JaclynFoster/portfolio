@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Layout/Layout.js'
 import { Card, Divider } from 'antd'
 import '../Projects/Projects.css'
+import tangledLead from './tangledLead.png'
 
 const Projects = () => {
   return (
@@ -12,16 +13,14 @@ const Projects = () => {
           title="Crochet Pattern App"
           headStyle={{ color: 'whitesmoke' }}
         >
-          <div className="video">
-            <iframe
-              width={'100%'}
-              src="https://www.youtube.com/embed/4y6BUayiu8Q"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            />
-          </div>
+          <iframe
+            className="video"
+            src="https://www.youtube.com/embed/4y6BUayiu8Q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
           <Divider />
           <div>
             <p className="cardP">
@@ -49,16 +48,14 @@ const Projects = () => {
           title="Neighborhood Chat Page"
           headStyle={{ color: 'whitesmoke' }}
         >
-          <div className="video">
-            <iframe
-              width={'100%'}
-              src="https://www.youtube.com/embed/DrIzf3Ld2RE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            />
-          </div>
+          <iframe
+            className="video"
+            src="https://www.youtube.com/embed/DrIzf3Ld2RE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
           <Divider />
           <div className="cardP">
             <p>
@@ -97,16 +94,14 @@ const Projects = () => {
           headStyle={{ color: 'whitesmoke' }}
         >
           <div className="card-flex">
-            <div className="video">
-              <iframe
-                width={'100%'}
-                src="https://www.youtube.com/embed/0IOMiHQT6Gg"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              />
-            </div>
+            <iframe
+              className="video"
+              src="https://www.youtube.com/embed/0IOMiHQT6Gg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            />
             <Divider />
             <div className="cardP">
               <p>
@@ -142,12 +137,38 @@ const Projects = () => {
             </div>
           </div>
         </Card>
+        <Card
+          className="store-card"
+          title="Tangled Lead Fencing & Welding"
+          headStyle={{ color: 'whitesmoke' }}
+        >
+          <img className="video tl" src={tangledLead} />
+          <Divider />
+          <div>
+            <p className="cardP">
+              This is a freelance application for Tangled Lead Fencing & Welding
+              to promote their business. Gmail API allows the company to receive
+              estimate requests directly to their email. Website is a full-stack
+              application and mobile-responsive.
+            </p>
+            <label>Front End:</label>
+            <p>Typescript, HTML, CSS, Axios, React, React Router, Redux</p>
+            <label>Back End:</label>
+            <p>Node, Express, Cors, Nodemailer</p>
+          </div>
+          <div className="card-link">
+            <a href="http://www.tangledlead.com/.com" target="_blank">
+              Site Link
+            </a>
+          </div>
+        </Card>
       </div>
     </Layout>
   )
 }
 
 export default Projects
+
 
 
 
