@@ -17,6 +17,8 @@ import reduxLogo from '../Skills/logos/redux.png'
 import awsLogo from './logos/aws.png'
 import jwtLogo from './logos/jwt.png'
 import bcryptLogo from './logos/bcrypt.png'
+import typescript from './logos/typescript.png'
+import nodemailer from './logos/nodemailer.png'
 import '../Skills/Skills.css'
 
 const Skills = () => {
@@ -30,7 +32,6 @@ const Skills = () => {
       <div className="skill-title">
         <h1>My Skillset includes the following:</h1>
         {useModal ? <UseModal setUseModal={setUseModal} /> : null}
-
         <button className="know-btn" onClick={() => showModal()}>
           Bonus Knowledge
         </button>
@@ -52,7 +53,6 @@ const Skills = () => {
               <img className="logo" src={jsLogo} />
             </div>
           </div>
-
           <div className="logo-container">
             <div className="logo-flex">
               <label>React</label>
@@ -67,21 +67,21 @@ const Skills = () => {
               <img className="logo" src={reduxLogo} />
             </div>
           </div>
-
           <div className="logo-container">
             <div className="logo-flex">
               <label>Bootstrap</label>
               <img className="logo" src={bootstrap} />
             </div>
             <div className="logo-flex">
-              <div className="logo-flex">
-                <label>Axios</label>
-                <img className="logo axios" src={axiosLogo} />
-              </div>
+              <label>Axios</label>
+              <img className="logo axios" src={axiosLogo} />
+            </div>
+            <div className="logo-flex">
+              <label>Typescript</label>
+              <img className="logo" src={typescript} />
             </div>
           </div>
         </div>
-
         <div className="back-end">
           <h3>Back-End:</h3>
           <div className="logo-container">
@@ -121,6 +121,10 @@ const Skills = () => {
               <label>Bcrypt</label>
               <img className="logo" src={bcryptLogo} />
             </div>
+            <div className="logo-flex">
+              <label>Nodemailer</label>
+              <img className="logo" src={nodemailer} />
+            </div>
           </div>
         </div>
       </div>
@@ -129,6 +133,7 @@ const Skills = () => {
 }
 
 export default Skills
+
 
 
 
