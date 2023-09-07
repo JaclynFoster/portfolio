@@ -18,6 +18,9 @@
     "gmail-send": "^1.8.14",
     "google-auth-library": "^9.0.0",
     "googleapis": "^126.0.1",
-    "nodemailer": "^6.9.4"
+    "nodemailer": "^6.9.4",
+    "serverless": "^3.34.0",
+    "serverless-deployment-bucket": "^1.6.0",
+    "serverless-http": "^3.2.0"
   }
 }

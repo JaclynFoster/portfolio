@@ -1,0 +1,21 @@
+# serverless.yml
+
+service: BackendServer
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-deployment-bucket
+
+provider:
+  name: aws
+  deploymentBucket:
+    name: serverless-deployment-container
+  runtime: nodejs16.x
+  region: us-east-1
+
+useDotenv: true
+
+functions:
+  app:
+    handler: index.handler
+    url: true
