@@ -21,7 +21,7 @@ const Contact = ({ mail, setMail }) => {
             <a href="https://github.com/JaclynFoster" target="_blank">
               <img className="contacts" src={git} />
             </a>
-            <label>Github</label>
+            {/* <label>Github</label> */}
 
             <a
               href="https://www.linkedin.com/in/jaclynfoster89"
@@ -29,7 +29,7 @@ const Contact = ({ mail, setMail }) => {
             >
               <img className="contacts" src={linkin} />
             </a>
-            <label>LinkedIn</label>
+            {/* <label>LinkedIn</label> */}
           </div>
           <h4>Send me an E-Mail:</h4>
           <ContactForm mail={mail} setMail={setMail} />

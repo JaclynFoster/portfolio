@@ -7,6 +7,9 @@ import tangledLead from './tangledLead.png'
 const Projects = () => {
   return (
     <Layout>
+      <div className="flex-box-wrap">
+
+     
       <div className="card-container">
         <Card
           className="store-card"
@@ -139,9 +142,10 @@ const Projects = () => {
         </Card>
         <Card
           className="store-card"
-          title="Tangled Lead Fencing & Welding"
+          title="Tangled Lead"
           headStyle={{ color: 'whitesmoke' }}
         >
+          <div className="card-flex">
           <img className="video tl" src={tangledLead} />
           <Divider />
           <div>
@@ -161,7 +165,9 @@ const Projects = () => {
               Site Link
             </a>
           </div>
+          </div>
         </Card>
+      </div>
       </div>
     </Layout>
   )

@@ -3,13 +3,12 @@
 service: BackendServer
 
 plugins:
-  - serverless-plugin-typescript
   - serverless-deployment-bucket
 
 provider:
   name: aws
   deploymentBucket:
-    name: serverless-deployment-container
+    name: serverless-deployment-bucketz
   runtime: nodejs16.x
   region: us-east-1
 

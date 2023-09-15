@@ -3,6 +3,8 @@ import { FcOk } from 'react-icons/fc'
 
 const ContactModal = () => {
 return (
+    <div>
+        
     <div className="contact-modal">
     <FcOk className="success-icon"/>
     <h2>
@@ -11,6 +13,7 @@ return (
     <h4>
         I look forward to speaking with you soon.
     </h4>
+    </div>
     </div>
 )
 }

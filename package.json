@@ -28,7 +28,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && aws s3 sync build/ s3://www.jaclyndfoster.com",
+    "deploy": "REACT_APP_BACKEND_URL=https://jafq5w63qpmfa2gflu2mwwejfm0zbcbq.lambda-url.us-east-1.on.aws npm run build && aws s3 sync build/ s3://www.jaclyndfoster.com",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -17,7 +17,7 @@ const dispatch = useDispatch()
 const modal = useSelector(modalOptions)
 const sendMail = () => {
     axios
-    .post(`http://localhost:3200/mail/sendMail`, {
+    .post(`${process.env.REACT_APP_BACKEND_URL}/mail/sendMail`, {
         name,
         email,
         message
