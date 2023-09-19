@@ -16,7 +16,7 @@ const Footer = () => {
             <PaperClipOutlined />
           </a>
         </div>
-        <Divider type="vertical" />
+        {/* <Divider type="vertical" /> */}
         <div className="footer-div">
           <MailOutlined className="footer-icon" />
           <h4>Jaclynfoster89@gmail.com</h4>

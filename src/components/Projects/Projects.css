@@ -19,6 +19,7 @@
     margin-top: 15px;
     margin-bottom: 10px; 
     min-width: 350px;
+    width: 100%;
 } 
 
 .cardP {
@@ -79,7 +80,7 @@ a {
     height: 150px;
 }
 
-.flex-box-wrap {
+/* .flex-box-wrap {
     padding: 1rem;
     width: 100%;
-}
+} */
