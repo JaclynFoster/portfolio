@@ -8,8 +8,6 @@ const Projects = () => {
   return (
     <Layout>
       <div className="flex-box-wrap">
-
-     
       <div className="card-container">
         <Card
           className="store-card"
