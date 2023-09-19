@@ -7,7 +7,7 @@ import tangledLead from './tangledLead.png'
 const Projects = () => {
   return (
     <Layout>
-      <div className="flex-box-wrap">
+      {/* <div className="flex-box-wrap"> */}
       <div className="card-container">
         <Card
           className="store-card"
@@ -166,7 +166,7 @@ const Projects = () => {
           </div>
         </Card>
       </div>
-      </div>
+      {/* </div> */}
     </Layout>
   )
 }

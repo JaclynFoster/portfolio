@@ -49,7 +49,7 @@
 .store-card {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 450px;
     min-width: 280px; 
     text-align: center;
     flex-wrap: wrap;
